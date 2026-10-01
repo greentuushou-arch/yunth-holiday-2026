@@ -55,22 +55,13 @@ sup{font-size:.5em;vertical-align:super;line-height:0;letter-spacing:0;margin-le
 .fv-links a b{font-size:12px;letter-spacing:.12em;background:#fff;color:var(--red-d);padding:2px 8px}
 .fv-links a i{font-style:normal;transition:transform .25s}
 .fv-links a:hover i{transform:translateX(6px)}
-/* ribbon unwrap */
-.ribbon{position:absolute;inset:0;z-index:5;pointer-events:none}
-.ribbon .v,.ribbon .h{position:absolute;transition:transform 1.4s cubic-bezier(.7,0,.2,1) .9s}
-.ribbon .v{left:68%;top:0;bottom:0;width:12px;margin-left:-6px;background:linear-gradient(90deg,#b0843c 0,#b0843c 1px,#f7e3ae 2px,#e3c27e 45%,#fff3cf 62%,#c79a50 calc(100% - 2px),#b0843c calc(100% - 1px))}
-.ribbon .h{top:40%;left:0;right:0;height:12px;margin-top:-6px;background:linear-gradient(180deg,#b0843c 0,#b0843c 1px,#f7e3ae 2px,#e3c27e 45%,#fff3cf 62%,#c79a50 calc(100% - 2px),#b0843c calc(100% - 1px))}
-.bow{position:absolute;left:68%;top:40%;width:180px;margin:-55px 0 0 -90px;transition:transform 1s cubic-bezier(.6,0,.3,1) .5s,opacity .8s .7s}
-.opened .ribbon .v{transform:translateY(-105%)}
-.opened .ribbon .h{transform:translateX(105%)}
-.opened .bow{transform:translateY(-30px) scale(.4) rotate(30deg);opacity:0}
 .fv-copy > *{opacity:0;transform:translateY(18px);transition:opacity 1s,transform 1s}
 .opened .fv-copy > *{opacity:1;transform:none}
-.opened .fv-copy > :nth-child(1){transition-delay:1.5s}
-.opened .fv-copy > :nth-child(2){transition-delay:1.65s}
-.opened .fv-copy > :nth-child(3){transition-delay:1.9s}
-.opened .fv-copy > :nth-child(4){transition-delay:2.1s}
-.fv-photo{opacity:0;transition:opacity 1.6s .9s}
+.opened .fv-copy > :nth-child(1){transition-delay:.15s}
+.opened .fv-copy > :nth-child(2){transition-delay:.3s}
+.opened .fv-copy > :nth-child(3){transition-delay:.5s}
+.opened .fv-copy > :nth-child(4){transition-delay:.7s}
+.fv-photo{opacity:0;transition:opacity 1.4s .1s}
 .opened .fv-photo{opacity:1}
 @media (max-width:767px){
   .fv{background:linear-gradient(180deg,#f22f48 0%,#ea2136 60%,#d4172a 100%)}
@@ -87,10 +78,6 @@ sup{font-size:.5em;vertical-align:super;line-height:0;letter-spacing:0;margin-le
   .fv-links{margin-top:30px;flex-direction:column}
   .fv-links a{font-size:14px;gap:10px}
   .fv-links a b{white-space:nowrap;font-size:11px;padding:1px 6px}
-  .ribbon .v,.bow{left:80%}
-  .ribbon .h,.bow{top:27%}
-  .ribbon .v{width:9px;margin-left:-4.5px}.ribbon .h{height:9px;margin-top:-4.5px}
-  .bow{width:110px;margin:-34px 0 0 -55px}
 }
 
 /* ============ LAUNCH ============ */
@@ -98,13 +85,13 @@ sup{font-size:.5em;vertical-align:super;line-height:0;letter-spacing:0;margin-le
 .launch-head{font-family:var(--mincho);font-weight:800;font-size:clamp(28px,3.4vw,46px);line-height:1.5;letter-spacing:.1em}
 .launch-head small{display:block;font-family:var(--num);font-weight:500;font-size:13px;letter-spacing:.4em;color:var(--red);margin-bottom:14px}
 .launch-grid{margin-top:60px;display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--red)}
-.pt{padding:44px 48px 8px 0;display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:end}
+.pt{padding:44px 48px 8px 0;display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:end;align-content:start}
 .pt + .pt{padding-left:48px;border-left:1px solid #ecd2cd}
 .pt-tag{grid-column:1/-1;font-weight:700;font-size:15px;letter-spacing:.12em;color:var(--red-d)}
 .pt-tag b{display:inline-block;margin-right:12px;padding:3px 10px;background:var(--red);color:#fff;font-size:13px}
 .pt-num{font-family:var(--num);font-weight:400;font-size:clamp(120px,13vw,190px);line-height:.78;letter-spacing:-.02em;color:var(--red)}
-.pt-unit{font-family:var(--mincho);font-weight:800;font-size:clamp(30px,3.4vw,48px);line-height:1.2;padding-bottom:4px;color:var(--red)}
-.pt-unit span{display:block;font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:.14em;color:var(--ink)}
+.pt-unit{font-family:var(--mincho);font-weight:800;font-size:clamp(48px,5vw,72px);line-height:1;padding-bottom:2px;color:var(--red)}
+.pt-unit span{display:block;margin-bottom:8px;font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:.14em;color:var(--ink)}
 .pt-desc{grid-column:1/-1;margin-top:26px;font-size:15px;line-height:1.9}
 .pt-desc strong{font-family:var(--num);font-weight:600;font-size:18px;letter-spacing:.08em}
 .pt .note{grid-column:1/-1;margin-top:6px}
@@ -348,7 +335,6 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px
 .shot .rv{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
   .rv,.fv-copy > *,.fv-photo{opacity:1;transform:none;transition:none}
-  .ribbon{display:none}
 }
 </style>
 </head>
@@ -369,19 +355,6 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px
       <a href="#gift"><b>予約受付中</b>大切な人へ ギフトBOX<i>→</i></a>
       <a href="#post"><b>販売中</b>自分へ ポスト投函BOX<i>→</i></a>
     </nav>
-  </div>
-  <div class="ribbon" aria-hidden="true">
-    <div class="v"></div><div class="h"></div>
-    <svg class="bow" viewBox="0 0 200 140">
-      <defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3d2"/><stop offset=".5" stop-color="#e2c07c"/><stop offset="1" stop-color="#b0843c"/></linearGradient></defs>
-      <g fill="url(#bg1)" stroke="#a97d35" stroke-width=".8">
-        <path d="M96 66 L80 132 L87 127 L91 136 L100 68 Z"/>
-        <path d="M104 66 L120 132 L113 127 L109 136 L100 68 Z"/>
-        <path fill-rule="evenodd" d="M100 61 C74 26 28 14 30 44 C32 70 74 70 100 61 Z M95 59 C74 38 44 30 41 45 C40 60 72 64 95 59 Z"/>
-        <path fill-rule="evenodd" d="M100 61 C126 26 172 14 170 44 C168 70 126 70 100 61 Z M105 59 C126 38 156 30 159 45 C160 60 128 64 105 59 Z"/>
-      </g>
-      <ellipse cx="100" cy="61" rx="6" ry="8" fill="url(#bg1)" stroke="#a97d35" stroke-width=".8"/>
-    </svg>
   </div>
 </header>
 
@@ -467,7 +440,7 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px
       <p class="plus" aria-hidden="true">+</p>
       <figure class="pick-one rv">
         <img src="images/detail-va-pdrn.jpg" alt="生VAダーマ美容液と生PDRN美容液" width="1000" height="510" loading="lazy">
-        <figcaption>シルキー肌は<em>生レチノール<sup>※5</sup></em>、<br class="sp">ヴェール肌は<em>生PDRN</em><sup>※4</sup>。</figcaption>
+        <figcaption>シルキー肌は<em>生レチノール<sup>※5</sup></em><br>ヴェール肌は<em>生PDRN<sup>※4</sup></em></figcaption>
       </figure>
       <div class="fork rv">
         <a class="silky" href="#silky"><small>シミ対策<sup>※1</sup>・シワ改善集中なら</small><strong>シルキー肌<sup>※2</sup>BOX</strong><i>¥16,830</i><span>生レチノール<sup>※5</sup>美容液入り</span></a>
@@ -586,8 +559,8 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px
 <footer><div class="inner"><span>Yunth Holiday Collection 2026</span><span>Copyright 2020 Yunth Inc. All Rights Reserved.</span></div></footer>
 
 <script>
-const Q = new URLSearchParams(location.search), SHOT = Q.get("shot"), CLOSED = Q.has("closed");
-if (SHOT) { document.documentElement.classList.add("shot"); document.documentElement.style.setProperty("--shot-h", SHOT + "px"); if (!CLOSED) document.body.classList.add("opened"); }
+const SHOT = new URLSearchParams(location.search).get("shot");
+if (SHOT) { document.documentElement.classList.add("shot"); document.documentElement.style.setProperty("--shot-h", SHOT + "px"); document.body.classList.add("opened"); }
 /* ---- ポスト投函BOX データ ---- */
 const POST_URL = "https://item.rakuten.co.jp/yunth/ys-r065/";
 const MINIS = [
@@ -619,11 +592,8 @@ document.getElementById("minis").innerHTML = MINIS.map(m => `
     </div>
   </article>`).join("");
 
-/* ---- FV: リボンをほどく ---- */
-if (!CLOSED) {
-  window.addEventListener("load", () => requestAnimationFrame(() => document.body.classList.add("opened")));
-  setTimeout(() => document.body.classList.add("opened"), 2500);
-}
+/* ---- FV: 表示 ---- */
+requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add("opened")));
 
 /* ---- スクロールで表示 ---- */
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
