@@ -22,7 +22,7 @@ html{scroll-behavior:smooth}
 body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.06em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
-sup{font-size:.5em;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.05em}
+sup{font-size:clamp(8px,.36em,13px);font-weight:500;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.08em}
 .sp{display:none}
 @media (max-width:767px){.sp{display:inline}.pc{display:none}}
 .inner{width:min(1120px,100% - 32px);margin-inline:auto}
@@ -254,7 +254,7 @@ sup{font-size:.5em;vertical-align:super;line-height:0;letter-spacing:0;margin-le
 .pick-index a i{display:block;font-family:var(--en);font-style:normal;font-weight:700;font-size:clamp(40px,4.6vw,64px);line-height:1}
 .pick-index a span{display:block;margin-top:10px;font-weight:700;font-size:14.5px;letter-spacing:.06em;line-height:1.6}
 .pick-index a small{display:block;margin-top:4px;font-family:var(--num);font-size:14px;font-weight:500}
-.pick-index a i sup,.mini-top i sup{font-family:var(--sans);font-size:13px;font-weight:500;vertical-align:top;position:relative;top:.2em}
+.pick-index a i sup,.mini-top i sup{font-family:var(--sans);font-size:11px;font-weight:500;vertical-align:top;position:relative;top:.2em}
 .c-vc{background:var(--vc)}.c-va{background:var(--va)}.c-az{background:var(--az)}.c-pdrn{background:var(--pdrn)}
 .minis{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:56px 28px}
 .mini{scroll-margin-top:20px;background:#fff;display:flex;flex-direction:column}
@@ -423,7 +423,7 @@ footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px
     </div>
 
     <div class="choose">
-      <h3 class="choose-head rv">シルキー肌<em>or</em><br class="sp">ヴェール肌。</h3>
+      <h3 class="choose-head rv">シルキー肌<sup>※2</sup><em>or</em><br class="sp">ヴェール肌<sup>※2</sup>。</h3>
       <p class="choose-lead rv">どちらのBOXにも、Yunthの定番3アイテムが入っています。<br class="pc">贈る人の肌に合わせて、もう1本の美容液を選んでください。</p>
       <div class="base rv">
         <div class="base-photo"><img src="images/detail-vc.jpg" alt="生ビタミンC美白美容液の個包装" width="1000" height="470" loading="lazy"></div>
