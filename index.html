@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yunth Holiday Collection 2026</title>
+<meta name="description" content="Yunth ホリデーコレクション2026。大切な人へ贈るスペシャルギフトBOX(予約受付中)と、がんばった自分へ届くポスト投函BOX。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Shippori+Mincho+B1:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#e9213a; --red-d:#c3142b; --red-l:#f04a5f;
+  --gold:#d2ad66; --gold-l:#f6e2b2; --gold-d:#a8803c;
+  --cream:#fcf7f0; --blush:#f8e7e3; --ink:#3b2427; --ink2:#7a6164;
+  --vc:#f0a9b6; --va:#d6ab7f; --az:#8fcdd8; --pdrn:#c3c7cf;
+  --en:"Playfair Display",serif; --mincho:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Jost",sans-serif;
+  --gold-grad:linear-gradient(170deg,#fff4d6 8%,#efd08f 42%,#c99a4f 72%,#f6e0a8 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.06em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+sup{font-size:.5em;vertical-align:super;line-height:0;letter-spacing:0;margin-left:.05em}
+.sp{display:none}
+@media (max-width:767px){.sp{display:inline}.pc{display:none}}
+.inner{width:min(1120px,100% - 32px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.9em;min-height:64px;padding:0 2.4em;font-weight:700;font-size:17px;letter-spacing:.12em;border-radius:2px;transition:transform .25s,background .25s,color .25s}
+.btn::after{content:"";width:22px;height:1px;background:currentColor;transition:width .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover::after{width:34px}
+.btn-gold{background:linear-gradient(100deg,#c99f55,#f3dca4 45%,#cba25c);color:var(--red-d)}
+.btn-red{background:var(--red);color:#fff}
+.btn-white{background:#fff;color:var(--red-d)}
+.note{font-size:11.5px;line-height:1.75;letter-spacing:.03em;color:var(--ink2)}
+.logo{display:block;aspect-ratio:903/299;background:var(--gold-grad);-webkit-mask:url(images/logo.png) center/contain no-repeat;mask:url(images/logo.png) center/contain no-repeat}
+
+/* ============ FV ============ */
+.fv{position:relative;min-height:100svh;overflow:hidden;background:linear-gradient(180deg,#f22f48 0%,#ea2136 48%,#cf1427 100%);color:#fff}
+#snow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+.fv-photo{position:absolute;right:0;top:0;bottom:0;width:54%;z-index:1;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%);mask-image:linear-gradient(90deg,transparent 0,#000 14%)}
+.fv-photo img{width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.fv-copy{position:relative;z-index:4;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:96px 0 64px;width:min(1240px,100% - 48px);margin-inline:auto}
+.fv-logo{width:170px}
+.fv-logo + small{display:block;margin-top:14px;font-family:var(--num);font-size:12px;letter-spacing:.42em;color:var(--gold-l)}
+.fv-title{margin-top:30px;font-family:var(--en);font-weight:700;line-height:.84;letter-spacing:-.01em;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fv-title .l1{display:block;font-style:italic;font-weight:500;font-size:clamp(84px,11.5vw,184px)}
+.fv-title .l2{display:block;font-size:clamp(62px,8.6vw,140px);margin-left:.35em}
+.fv-title .yr{display:block;margin-top:.4em;font-family:var(--num);font-weight:500;font-size:clamp(18px,1.6vw,24px);letter-spacing:.6em;margin-left:.3em}
+.fv-lead{margin-top:40px;font-family:var(--mincho);font-weight:700;font-size:clamp(24px,2.4vw,34px);line-height:1.65;letter-spacing:.14em}
+.fv-links{margin-top:44px;display:flex;flex-wrap:wrap;gap:14px 40px}
+.fv-links a{display:flex;align-items:baseline;gap:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.6);font-size:15px;font-weight:700;letter-spacing:.1em}
+.fv-links a b{font-size:12px;letter-spacing:.12em;background:#fff;color:var(--red-d);padding:2px 8px}
+.fv-links a i{font-style:normal;transition:transform .25s}
+.fv-links a:hover i{transform:translateX(6px)}
+/* ribbon unwrap */
+.ribbon{position:absolute;inset:0;z-index:5;pointer-events:none}
+.ribbon .v,.ribbon .h{position:absolute;transition:transform 1.4s cubic-bezier(.7,0,.2,1) .9s}
+.ribbon .v{left:68%;top:0;bottom:0;width:12px;margin-left:-6px;background:linear-gradient(90deg,#b0843c 0,#b0843c 1px,#f7e3ae 2px,#e3c27e 45%,#fff3cf 62%,#c79a50 calc(100% - 2px),#b0843c calc(100% - 1px))}
+.ribbon .h{top:40%;left:0;right:0;height:12px;margin-top:-6px;background:linear-gradient(180deg,#b0843c 0,#b0843c 1px,#f7e3ae 2px,#e3c27e 45%,#fff3cf 62%,#c79a50 calc(100% - 2px),#b0843c calc(100% - 1px))}
+.bow{position:absolute;left:68%;top:40%;width:180px;margin:-55px 0 0 -90px;transition:transform 1s cubic-bezier(.6,0,.3,1) .5s,opacity .8s .7s}
+.opened .ribbon .v{transform:translateY(-105%)}
+.opened .ribbon .h{transform:translateX(105%)}
+.opened .bow{transform:translateY(-30px) scale(.4) rotate(30deg);opacity:0}
+.fv-copy > *{opacity:0;transform:translateY(18px);transition:opacity 1s,transform 1s}
+.opened .fv-copy > *{opacity:1;transform:none}
+.opened .fv-copy > :nth-child(1){transition-delay:1.5s}
+.opened .fv-copy > :nth-child(2){transition-delay:1.65s}
+.opened .fv-copy > :nth-child(3){transition-delay:1.9s}
+.opened .fv-copy > :nth-child(4){transition-delay:2.1s}
+.fv-photo{opacity:0;transition:opacity 1.6s .9s}
+.opened .fv-photo{opacity:1}
+@media (max-width:767px){
+  .fv{background:linear-gradient(180deg,#f22f48 0%,#ea2136 60%,#d4172a 100%)}
+  .fv-copy{width:auto;padding:64px 20px 48px;justify-content:flex-start;min-height:0}
+  .fv-photo{position:relative;right:auto;top:auto;bottom:auto;width:calc(100% + 40px);margin:6px 0 4px -20px;opacity:1;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%)}
+  .fv-photo.sp{display:block}
+  .fv-photo img{height:auto}
+  .fv-logo{width:120px}
+  .fv-title{margin-top:22px}
+  .fv-title .l1{font-size:23vw}
+  .fv-title .l2{font-size:16.5vw;margin-left:.3em}
+  .fv-lead{margin-top:0;font-size:22px}
+  .fv-links{margin-top:30px;flex-direction:column}
+  .fv-links a{font-size:14px;gap:10px}
+  .fv-links a b{white-space:nowrap;font-size:11px;padding:1px 6px}
+  .ribbon .v,.bow{left:80%}
+  .ribbon .h,.bow{top:27%}
+  .ribbon .v{width:9px;margin-left:-4.5px}.ribbon .h{height:9px;margin-top:-4.5px}
+  .bow{width:110px;margin:-34px 0 0 -55px}
+}
+
+/* ============ LAUNCH ============ */
+.launch{padding:110px 0 120px}
+.launch-head{font-family:var(--mincho);font-weight:800;font-size:clamp(28px,3.4vw,46px);line-height:1.5;letter-spacing:.1em}
+.launch-head small{display:block;font-family:var(--num);font-weight:500;font-size:13px;letter-spacing:.4em;color:var(--red);margin-bottom:14px}
+.launch-grid{margin-top:60px;display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--red)}
+.pt{padding:44px 48px 8px 0;display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:end}
+.pt + .pt{padding-left:48px;border-left:1px solid #ecd2cd}
+.pt-tag{grid-column:1/-1;font-weight:700;font-size:15px;letter-spacing:.12em;color:var(--red-d)}
+.pt-tag b{display:inline-block;margin-right:12px;padding:3px 10px;background:var(--red);color:#fff;font-size:13px}
+.pt-num{font-family:var(--num);font-weight:400;font-size:clamp(120px,13vw,190px);line-height:.78;letter-spacing:-.02em;color:var(--red)}
+.pt-unit{font-family:var(--mincho);font-weight:800;font-size:clamp(30px,3.4vw,48px);line-height:1.2;padding-bottom:4px;color:var(--red)}
+.pt-unit span{display:block;font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:.14em;color:var(--ink)}
+.pt-desc{grid-column:1/-1;margin-top:26px;font-size:15px;line-height:1.9}
+.pt-desc strong{font-family:var(--num);font-weight:600;font-size:18px;letter-spacing:.08em}
+.pt .note{grid-column:1/-1;margin-top:6px}
+@media (max-width:767px){
+  .launch{padding:72px 0 80px}
+  .launch-grid{grid-template-columns:1fr;margin-top:36px}
+  .launch-head{font-size:22px;letter-spacing:.06em}
+  .pt{padding:32px 0 30px}
+  .pt + .pt{padding-left:0;border-left:0;border-top:1px solid #ecd2cd}
+  .pt-num{font-size:140px}
+  .pt-desc{font-size:14px}
+}
+
+/* ============ TWO WAYS ============ */
+.ways{padding:0 0 130px}
+.ways-head{font-family:var(--mincho);font-weight:800;font-size:clamp(30px,4vw,56px);line-height:1.45;letter-spacing:.1em}
+.ways-head small{display:block;font-family:var(--en);font-style:italic;font-weight:500;font-size:22px;letter-spacing:.04em;color:var(--red);margin-bottom:10px}
+.ways-sub{margin-top:24px;font-size:16px;color:var(--ink2)}
+.ways-grid{margin-top:60px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.way{position:relative;display:flex;flex-direction:column;overflow:hidden}
+.way-img{overflow:hidden}
+.way img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.way:hover img{transform:scale(1.04)}
+.way-body{position:relative;flex:1;padding:30px 110px 34px 36px;color:#fff}
+.way-gift .way-body{background:var(--red)}
+.way-post .way-body{background:linear-gradient(110deg,#c39a52,#ddbb78 55%,#c9a15b)}
+.way-for{font-family:var(--en);font-style:italic;font-size:clamp(28px,2.7vw,40px);line-height:1;white-space:nowrap}
+.way-gift .way-for{color:var(--gold-l)}
+.way-name{margin-top:14px;font-family:var(--mincho);font-weight:800;font-size:clamp(21px,2vw,27px);letter-spacing:.1em;line-height:1.5}
+.way-meta{margin-top:12px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;font-size:14px;font-weight:700;letter-spacing:.1em}
+.way-meta b{padding:2px 10px;background:#fff;font-size:13px}
+.way-gift .way-meta b{color:var(--red-d)}
+.way-post .way-meta b{color:var(--gold-d)}
+.way-meta .yen{font-family:var(--num);font-weight:500;font-size:22px;letter-spacing:.04em}
+.way-go{position:absolute;right:32px;top:50%;margin-top:-30px;width:60px;height:60px;border-radius:50%;border:1px solid rgba(255,255,255,.8);display:grid;place-items:center;transition:background .3s}
+.way-go::before{content:"";width:14px;height:14px;border-right:1.5px solid #fff;border-bottom:1.5px solid #fff;transform:rotate(45deg) translate(-3px,-3px)}
+.way:hover .way-go{background:rgba(255,255,255,.2)}
+@media (max-width:767px){
+  .ways{padding:0 0 80px}
+  .ways-grid{grid-template-columns:1fr;margin-top:36px;gap:16px}
+  .way img{aspect-ratio:5/4}
+  .way-body{padding:24px 72px 26px 20px}
+  .way-name{font-size:19px;letter-spacing:.06em}
+  .way-go{right:18px;width:48px;height:48px;margin-top:-24px}
+}
+
+/* ============ CHAPTER COMMON ============ */
+.ch-head{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:48px}
+.ch-no{font-family:var(--en);font-weight:700;font-size:15px;letter-spacing:.3em}
+.ch-no span{font-size:96px;letter-spacing:0;line-height:.9;display:block;font-style:italic;font-weight:500}
+.ch-title{margin-top:18px;font-family:var(--en);font-weight:700;font-size:clamp(44px,5.6vw,82px);line-height:1;letter-spacing:-.005em}
+.ch-catch{margin-top:30px;font-family:var(--mincho);font-weight:800;font-size:clamp(26px,3vw,42px);line-height:1.6;letter-spacing:.12em}
+.ch-text{margin-top:30px;font-size:16px;line-height:2.3}
+.ch-status{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.ch-status span{padding:5px 14px;font-weight:700;font-size:14px;letter-spacing:.12em}
+@media (max-width:767px){
+  .ch-head{grid-template-columns:1fr;gap:28px}
+  .ch-no span{font-size:72px}
+  .ch-text{font-size:15px;line-height:2.15}
+}
+
+/* ============ GIFT ============ */
+.gift{background:linear-gradient(180deg,#ec2238,#e41d33 60%,#d9182d);color:#fff;padding:130px 0 130px;overflow:hidden}
+.gift .ch-no,.gift .ch-title{color:var(--gold-l)}
+.gift .ch-status span{background:#fff;color:var(--red-d)}
+.gift .ch-status span + span{background:none;border:1px solid rgba(255,255,255,.8);color:#fff}
+.gift-visual img{width:100%}
+
+.choose{margin-top:130px}
+.choose-head{font-family:var(--mincho);font-weight:800;font-size:clamp(32px,4.4vw,60px);line-height:1.4;letter-spacing:.08em}
+.choose-head em{font-family:var(--en);font-style:italic;font-weight:500;color:var(--gold-l);margin:0 .25em;letter-spacing:0}
+.choose-lead{margin-top:18px;font-size:16px}
+.base{margin-top:52px;background:#fff;color:var(--ink);display:grid;grid-template-columns:1.1fr 1fr;align-items:center}
+.base-photo img{width:100%;height:100%;object-fit:cover}
+.base-body{padding:34px 40px}
+.base h4{font-family:var(--num);font-weight:500;font-size:13px;letter-spacing:.3em;color:var(--red)}
+.base p{margin-top:4px;font-family:var(--mincho);font-weight:800;font-size:23px;letter-spacing:.1em}
+.base ul{list-style:none;margin-top:16px;border-top:1px solid #ecd9d4}
+.base li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #ecd9d4;font-size:15px;font-weight:500}
+.base li span{font-family:var(--num);color:var(--ink2);white-space:nowrap}
+.plus{margin:26px 0;text-align:center;font-family:var(--num);font-weight:300;font-size:72px;line-height:1;color:var(--gold-l)}
+.pick-one img{width:100%}
+.pick-one figcaption{margin-top:22px;font-family:var(--mincho);font-weight:800;font-size:clamp(22px,2.6vw,34px);letter-spacing:.1em;line-height:1.6}
+.pick-one figcaption em{font-style:normal;color:var(--gold-l)}
+.fork{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fork a{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 18px;padding:24px 28px;color:var(--ink);transition:transform .25s}
+.fork a:hover{transform:translateY(-4px)}
+.fork a small{grid-column:1/-1;font-size:13px;font-weight:700;letter-spacing:.1em}
+.fork a strong{grid-column:1;font-family:var(--mincho);font-weight:800;font-size:24px;letter-spacing:.08em;line-height:1.4}
+.fork a i{grid-column:2;font-style:normal;font-family:var(--num);font-weight:500;font-size:26px}
+.fork a span{grid-column:1/-1;font-size:13.5px;color:var(--ink2)}
+.fork .silky{background:linear-gradient(110deg,#ecd0aa,#f8e8d2)}
+.fork .veil{background:linear-gradient(110deg,#d3d6dd,#f1f2f5)}
+.gift .note{color:rgba(255,255,255,.85)}
+@media (max-width:767px){
+  .gift{padding:84px 0 90px}
+  .choose{margin-top:90px}
+  .base{grid-template-columns:1fr;margin-top:36px}
+  .base-body{padding:24px 20px 26px}
+  .base p{font-size:19px}
+  .plus{font-size:56px;margin:18px 0}
+  .pick-one{margin-inline:-16px}
+  .pick-one figcaption{padding:0 16px;font-size:21px}
+  .fork{grid-template-columns:1fr;gap:12px}
+  .fork a{grid-template-columns:1fr;padding:20px}
+  .fork a i{grid-column:1}
+  .fork a strong{font-size:21px}
+}
+
+/* product panels */
+.boxes{margin-top:110px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.box{background:#fff;color:var(--ink);scroll-margin-top:20px}
+.box-photo{position:relative;background:var(--red)}
+.box-photo img{width:100%}
+.box-photo .tone{position:absolute;left:0;top:0;padding:10px 18px;font-family:var(--num);font-weight:600;font-size:13px;letter-spacing:.24em;color:var(--ink)}
+.box-body{padding:36px 40px 40px}
+.box-catch{font-weight:700;font-size:16px;letter-spacing:.1em;color:var(--red-d)}
+.box-name{margin-top:6px;font-family:var(--mincho);font-weight:800;font-size:clamp(34px,3.4vw,46px);letter-spacing:.08em;line-height:1.3}
+.box-formula{margin-top:8px;font-size:15px;font-weight:500;color:var(--ink2)}
+.box-items{margin-top:26px;background:var(--red);padding:12px}
+.spec{margin-top:24px;list-style:none;border-top:1px solid #ecd9d4}
+.spec li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid #ecd9d4;font-size:15px}
+.spec li span{font-family:var(--num);white-space:nowrap;color:var(--ink2)}
+.spec li .n,.base li .n{font-weight:inherit;flex:1}
+.spec li.hl{font-weight:700}
+.spec li.hl .n::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:middle}
+.price{margin-top:28px;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 14px}
+.price .yen{font-family:var(--en);font-variant-numeric:lining-nums;font-weight:700;font-size:clamp(46px,4.6vw,62px);line-height:1;letter-spacing:.01em}
+.price .tax{font-size:14px;font-weight:700}
+.price .pts{font-size:13px;font-weight:700;color:var(--red-d);letter-spacing:.08em}
+.box .btn{margin-top:24px;width:100%}
+.box .note{margin-top:20px;color:var(--ink2)}
+@media (max-width:767px){
+  .boxes{grid-template-columns:1fr;gap:24px;margin-top:80px}
+  .box-body{padding:28px 20px 30px}
+}
+
+/* ============ POST ============ */
+.post{background:var(--blush);padding:130px 0 130px;overflow:hidden}
+.post .ch-no,.post .ch-title{color:var(--red)}
+.post .ch-status span{background:var(--red);color:#fff}
+.post .ch-status span + span{background:none;border:1px solid var(--red);color:var(--red-d)}
+.post-visual{position:relative}
+.post-visual img{width:100%}
+.post-visual .stamp{position:absolute;left:-28px;bottom:-34px;width:150px;height:150px;border-radius:50%;background:var(--gold-grad);color:var(--red-d);display:grid;place-items:center;text-align:center;font-weight:700;font-size:15px;line-height:1.5;letter-spacing:.08em}
+.post-visual .stamp b{display:block;font-family:var(--mincho);font-size:24px}
+.post-facts{margin-top:110px;display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--red)}
+.fact{padding:28px 28px 28px 0}
+.fact + .fact{padding-left:28px;border-left:1px solid #e6c7c1}
+.fact b{display:block;font-family:var(--mincho);font-weight:800;font-size:clamp(22px,2.3vw,30px);letter-spacing:.08em;line-height:1.5}
+.fact p{margin-top:8px;font-size:14.5px;color:var(--ink2);line-height:1.85}
+.pick{margin-top:130px}
+.pick-head{font-family:var(--mincho);font-weight:800;font-size:clamp(30px,4vw,54px);line-height:1.5;letter-spacing:.1em}
+.pick-head em{font-style:normal;color:var(--red)}
+.pick-index{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.pick-index a{position:relative;padding:22px 20px 20px;color:var(--ink);transition:transform .25s}
+.pick-index a:hover{transform:translateY(-4px)}
+.pick-index a i{display:block;font-family:var(--en);font-style:normal;font-weight:700;font-size:clamp(40px,4.6vw,64px);line-height:1}
+.pick-index a span{display:block;margin-top:10px;font-weight:700;font-size:14.5px;letter-spacing:.06em;line-height:1.6}
+.pick-index a small{display:block;margin-top:4px;font-family:var(--num);font-size:14px;font-weight:500}
+.c-vc{background:var(--vc)}.c-va{background:var(--va)}.c-az{background:var(--az)}.c-pdrn{background:var(--pdrn)}
+.minis{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:56px 28px}
+.mini{scroll-margin-top:20px;background:#fff;display:flex;flex-direction:column}
+.mini-top{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:26px 30px 22px}
+.mini-top i{font-family:var(--en);font-style:normal;font-weight:700;font-size:76px;line-height:.8}
+.mini-top p{text-align:right;font-weight:700;font-size:15px;letter-spacing:.06em;line-height:1.6}
+.mini-photo{background:var(--red)}
+.mini-body{padding:26px 30px 32px;display:flex;flex-direction:column;flex:1}
+.mini-body .box-name{font-size:clamp(30px,2.8vw,38px);margin-top:0}
+.mini-items{margin-top:20px;background:var(--red);padding:8px}
+.mini .spec{flex:1}
+.mini .price .yen{font-size:clamp(42px,4vw,54px)}
+.mini .btn{margin-top:22px;width:100%}
+.mini .note{margin-top:16px}
+@media (max-width:767px){
+  .post{padding:84px 0 90px}
+  .post-visual{margin-inline:-16px}
+  .post-visual .stamp{left:auto;right:16px;bottom:-40px;width:116px;height:116px;font-size:12px}
+  .post-visual .stamp b{font-size:19px}
+  .post-facts{grid-template-columns:1fr;margin-top:80px}
+  .fact,.fact + .fact{padding:22px 0;border-left:0}
+  .fact + .fact{border-top:1px solid #e6c7c1}
+  .pick{margin-top:90px}
+  .pick-index{grid-template-columns:1fr 1fr;margin-top:28px}
+  .pick-index a{padding:18px 16px}
+  .pick-index a span{font-size:12.5px;letter-spacing:0}
+  .minis{grid-template-columns:1fr;gap:28px;margin-top:36px}
+  .mini-top{padding:22px 20px 18px}.mini-top i{font-size:60px}.mini-top p{font-size:13.5px}
+  .mini-body{padding:24px 20px 28px}
+}
+
+/* ============ SHIPPING NOTICE ============ */
+.ship{background:var(--cream);padding:100px 0}
+.ship-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:start}
+.ship h2{font-family:var(--mincho);font-weight:800;font-size:clamp(26px,2.8vw,36px);line-height:1.55;letter-spacing:.1em}
+.ship h2 + p{margin-top:18px;font-size:15.5px}
+.ship ol{list-style:none;counter-reset:s;border-top:2px solid var(--red)}
+.ship li{counter-increment:s;display:grid;grid-template-columns:70px 1fr;gap:18px;padding:26px 0;border-bottom:1px solid #e6c7c1}
+.ship li::before{content:"0" counter(s);font-family:var(--en);font-weight:700;font-size:44px;line-height:1;color:var(--red)}
+.ship li b{display:block;font-size:18px;letter-spacing:.08em}
+.ship li p{margin-top:6px;font-size:15px;color:var(--ink2)}
+.ship .note{margin-top:20px}
+@media (max-width:767px){
+  .ship{padding:72px 0}
+  .ship-grid{grid-template-columns:1fr;gap:32px}
+  .ship li{grid-template-columns:52px 1fr;gap:12px}
+  .ship li::before{font-size:34px}
+}
+
+/* ============ CLOSING ============ */
+.closing{display:grid;grid-template-columns:1fr 1fr;background:var(--red);color:#fff}
+.closing-photo img{width:100%;height:100%;object-fit:cover}
+.closing-body{display:flex;flex-direction:column;justify-content:center;padding:80px 64px}
+.closing-logo{width:130px;margin-bottom:34px}
+.closing h2{font-family:var(--en);font-style:italic;font-weight:500;font-size:clamp(52px,6vw,96px);line-height:1;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+.closing h2 + p{margin-top:22px;font-family:var(--mincho);font-weight:700;font-size:clamp(19px,1.9vw,25px);letter-spacing:.12em;line-height:1.75}
+.closing-cta{margin-top:40px;display:grid;gap:14px;max-width:420px}
+footer{background:var(--red-d);color:#fff;padding:36px 0 44px}
+footer .inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;opacity:.85}
+@media (max-width:767px){
+  .closing{grid-template-columns:1fr}
+  .closing-body{padding:48px 20px 64px}
+  .closing-logo{width:100px;margin-bottom:26px}
+  .closing h2 + p{font-size:18px;letter-spacing:.08em}
+  .closing-cta{max-width:none}
+}
+@media (max-width:767px){
+  .btn{font-size:15px;letter-spacing:.06em;padding:0 1.2em;white-space:nowrap;gap:.7em}
+  .btn::after{width:16px}
+}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+/* 確認用スクリーンショットモード(?shot=高さ) */
+.shot .fv,.shot .fv-copy{min-height:var(--shot-h)}
+.shot *{transition:none!important}
+.shot .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv,.fv-copy > *,.fv-photo{opacity:1;transform:none;transition:none}
+  .ribbon{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ FV ============ -->
+<header class="fv" id="top">
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div class="fv-photo pc"><img src="images/gift-open.jpg" alt="Yunth スペシャルギフトBOX。赤いボックスにリボンがかかったクリスマス限定BOX" width="1000" height="920"></div>
+  <div class="fv-copy">
+    <div><h2 class="logo fv-logo" role="img" aria-label="Yunth"></h2><small>HOLIDAY COLLECTION</small></div>
+    <h1 class="fv-title"><span class="l1">Holiday</span><span class="l2">Collection</span><span class="yr">2026</span></h1>
+    <div>
+      <div class="fv-photo sp"><img src="images/gift-open.jpg" alt="" width="1000" height="920"></div>
+      <p class="fv-lead">赤い箱をひらく、<br>その瞬間から<br>クリスマスがはじまる。</p>
+    </div>
+    <nav class="fv-links" aria-label="BOXの種類">
+      <a href="#gift"><b>予約受付中</b>大切な人へ ギフトBOX<i>→</i></a>
+      <a href="#post"><b>販売中</b>自分へ ポスト投函BOX<i>→</i></a>
+    </nav>
+  </div>
+  <div class="ribbon" aria-hidden="true">
+    <div class="v"></div><div class="h"></div>
+    <svg class="bow" viewBox="0 0 200 140">
+      <defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3d2"/><stop offset=".5" stop-color="#e2c07c"/><stop offset="1" stop-color="#b0843c"/></linearGradient></defs>
+      <g fill="url(#bg1)" stroke="#a97d35" stroke-width=".8">
+        <path d="M96 66 L80 132 L87 127 L91 136 L100 68 Z"/>
+        <path d="M104 66 L120 132 L113 127 L109 136 L100 68 Z"/>
+        <path fill-rule="evenodd" d="M100 61 C74 26 28 14 30 44 C32 70 74 70 100 61 Z M95 59 C74 38 44 30 41 45 C40 60 72 64 95 59 Z"/>
+        <path fill-rule="evenodd" d="M100 61 C126 26 172 14 170 44 C168 70 126 70 100 61 Z M105 59 C126 38 156 30 159 45 C160 60 128 64 105 59 Z"/>
+      </g>
+      <ellipse cx="100" cy="61" rx="6" ry="8" fill="url(#bg1)" stroke="#a97d35" stroke-width=".8"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ============ LAUNCH ============ -->
+<section class="launch">
+  <div class="inner">
+    <h2 class="launch-head rv"><small>HOLIDAY COLLECTION 2026</small>ホリデーコレクション2026<br>販売開始</h2>
+    <div class="launch-grid">
+      <div class="pt rv">
+        <p class="pt-tag"><b>予約限定</b>スペシャルギフトBOX</p>
+        <p class="pt-num">20</p>
+        <p class="pt-unit"><span>ポイント</span>倍</p>
+        <p class="pt-desc">予約受付中 ／ <strong>10.25</strong> 発売<br>ポイントアップ期間<br class="sp"> <strong>2026.10.25</strong>(日) 23:59まで</p>
+        <p class="note">※予約購入はSPUポイントアップの対象外です。※対象商品はシルキー肌BOX・ヴェール肌BOXです。</p>
+      </div>
+      <div class="pt rv">
+        <p class="pt-tag"><b>送料無料</b>ポスト投函BOX</p>
+        <p class="pt-num">10</p>
+        <p class="pt-unit"><span>ポイント</span>倍</p>
+        <p class="pt-desc">好評販売中<br>ポイントアップ期間<br class="sp"> <strong>2026.10.31</strong>(土) 23:59まで</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TWO WAYS ============ -->
+<section class="ways">
+  <div class="inner">
+    <h2 class="ways-head rv"><small>Two ways to give</small>贈る相手で、<br class="sp">選ぶ箱がちがう。</h2>
+    <p class="ways-sub rv">いつもありがとうを伝えたい人へ。今年もがんばった自分へ。<br class="pc">Yunthのクリスマス限定BOXは、2つの贈り方から選べます。</p>
+    <div class="ways-grid">
+      <a class="way way-gift rv" href="#gift">
+        <div class="way-img"><img src="images/hand-box.jpg" alt="赤いギフトボックスを抱える女性" width="1000" height="1000" loading="lazy"></div>
+        <div class="way-body">
+          <p class="way-for">For someone special</p>
+          <p class="way-name">大切な人へ<br>スペシャルギフトBOX 2種</p>
+          <p class="way-meta"><b>予約受付中</b><span class="yen">¥15,840〜</span></p>
+          <span class="way-go" aria-hidden="true"></span>
+        </div>
+      </a>
+      <a class="way way-post rv" href="#post">
+        <div class="way-img"><img src="images/post-wood.jpg" alt="ポスト投函BOXを開いたところ" width="1000" height="1000" loading="lazy"></div>
+        <div class="way-body">
+          <p class="way-for">For myself</p>
+          <p class="way-name">がんばった自分へ<br>ポスト投函BOX 4種</p>
+          <p class="way-meta"><b>好評販売中</b><span class="yen">¥4,180〜</span></p>
+          <span class="way-go" aria-hidden="true"></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 GIFT ============ -->
+<section class="gift" id="gift">
+  <div class="inner">
+    <div class="ch-head">
+      <div class="rv">
+        <p class="ch-no"><span>01</span>FOR SOMEONE SPECIAL</p>
+        <h2 class="ch-title">Special<br>Gift BOX</h2>
+        <p class="ch-catch">その肌に、<br>心まで温まる<br class="pc">ご褒美を。</p>
+        <div class="ch-status"><span>予約受付中</span><span>10.25 発売</span><span>送料無料</span></div>
+        <p class="ch-text">今年のクリスマスは、<br>大切な人にきれいを楽しむ時間を<br>Yunthのクリスマス限定BOXで。<br>赤いボックスを開く瞬間から、毎日のスキンケアまで。<br>「いつもありがとう」の気持ちを、このひと箱に込めて。</p>
+      </div>
+      <figure class="gift-visual rv"><img src="images/gift-open.jpg" alt="リボンのかかった赤いBOXを開くと、美容液・化粧水・クリームが並ぶ" width="1000" height="920" loading="lazy"></figure>
+    </div>
+
+    <div class="choose">
+      <h3 class="choose-head rv">シルキー肌<em>or</em><br class="sp">ヴェール肌。</h3>
+      <p class="choose-lead rv">どちらのBOXにも、Yunthの定番3アイテムが入っています。<br class="pc">贈る人の肌に合わせて、もう1本の美容液を選んでください。</p>
+      <div class="base rv">
+        <div class="base-photo"><img src="images/detail-vc.jpg" alt="生ビタミンC美白美容液の個包装" width="1000" height="470" loading="lazy"></div>
+        <div class="base-body">
+          <h4>COMMON ITEMS</h4>
+          <p>両方に入っている3アイテム</p>
+          <ul>
+            <li><b class="n">生ビタミンC美白<sup>※1</sup>美容液</b><span>1箱 28包</span></li>
+            <li><b class="n">生VC美白<sup>※1</sup>化粧水</b><span>1本 120ml</span></li>
+            <li><b class="n">生VC美白<sup>※1</sup>クリーム</b><span>1個 30g</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="plus" aria-hidden="true">+</p>
+      <figure class="pick-one rv">
+        <img src="images/detail-va-pdrn.jpg" alt="生VAダーマ美容液と生PDRN美容液" width="1000" height="510" loading="lazy">
+        <figcaption>シルキー肌は<em>生レチノール</em>、<br class="sp">ヴェール肌は<em>生PDRN</em><sup>※4</sup>。</figcaption>
+      </figure>
+      <div class="fork rv">
+        <a class="silky" href="#silky"><small>シミ対策<sup>※1</sup>・シワ改善集中なら</small><strong>シルキー肌<sup>※2</sup>BOX</strong><i>¥16,830</i><span>生レチノール美容液入り</span></a>
+        <a class="veil" href="#veil"><small>うるおい満タン水光肌<sup>※3</sup>なら</small><strong>ヴェール肌<sup>※2</sup>BOX</strong><i>¥15,840</i><span>生PDRN<sup>※4</sup>美容液入り</span></a>
+      </div>
+      <p class="note rv" style="margin-top:18px">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 仕上がりイメージのこと　※3 うるおいとツヤのある肌印象のこと　※4 DNA-Na(保湿)</p>
+    </div>
+
+    <div class="boxes">
+      <article class="box rv" id="silky">
+        <div class="box-photo"><img src="images/silky-box.jpg" alt="シルキー肌BOX" width="1000" height="680" loading="lazy"><span class="tone" style="background:#ecd1ae">SILKY</span></div>
+        <div class="box-body">
+          <p class="box-catch">シミ対策<sup>※1</sup>・シワ改善集中</p>
+          <h3 class="box-name">シルキー肌<sup>※2</sup>BOX</h3>
+          <p class="box-formula">生VC美白<sup>※1</sup>美容液 × 生VAダーマ美容液</p>
+          <div class="box-items"><img src="images/silky-items.jpg" alt="セット内容の商品一覧" width="940" height="160" loading="lazy"></div>
+          <ul class="spec">
+            <li><b class="n">生ビタミンC<sup>※3</sup>美白<sup>※1</sup>美容液</b><span>1箱(28包)</span></li>
+            <li class="hl"><b class="n">生レチノール<sup>※4</sup>美容液</b><span>1箱(28包)</span></li>
+            <li><b class="n">生VC美白<sup>※1</sup>化粧水</b><span>1本(120ml)</span></li>
+            <li><b class="n">生VC美白<sup>※1</sup>クリーム</b><span>1個(30g)</span></li>
+            <li><b class="n">クリスマス限定BOX</b><span>数量限定</span></li>
+          </ul>
+          <div class="price"><span class="yen">¥16,830</span><span class="tax">(税込)</span><span class="pts">予約でポイント20倍</span></div>
+          <a class="btn btn-red" href="https://item.rakuten.co.jp/yunth/ys-r178/" target="_blank" rel="noopener">シルキー肌BOXを予約する</a>
+          <p class="note">※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 仕上がりイメージのこと　※3 アスコルビン酸　※4 レチノール油液(ビタミンA 166,667IU/g)(整肌)<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／薬用VAセラム／薬用ホワイトニングローション VCP／薬用 モイストクリーム PVC<br>数量限定のため、なくなり次第終了となります。</p>
+        </div>
+      </article>
+      <article class="box rv" id="veil">
+        <div class="box-photo"><img src="images/veil-box.jpg" alt="ヴェール肌BOX" width="1000" height="680" loading="lazy"><span class="tone" style="background:#d9dce2">VEIL</span></div>
+        <div class="box-body">
+          <p class="box-catch">うるおい満タン水光肌<sup>※1</sup>へ</p>
+          <h3 class="box-name">ヴェール肌<sup>※2</sup>BOX</h3>
+          <p class="box-formula">生VC美白<sup>※3</sup>美容液 × 生PDRN<sup>※4</sup>美容液</p>
+          <div class="box-items"><img src="images/veil-items.jpg" alt="セット内容の商品一覧" width="940" height="160" loading="lazy"></div>
+          <ul class="spec">
+            <li><b class="n">生ビタミンC<sup>※5</sup>美白<sup>※3</sup>美容液</b><span>1箱(28包)</span></li>
+            <li class="hl"><b class="n">生PDRN<sup>※4</sup>美容液</b><span>1箱(28包)</span></li>
+            <li><b class="n">生VC美白<sup>※3</sup>化粧水</b><span>1本(120ml)</span></li>
+            <li><b class="n">生VC美白<sup>※3</sup>クリーム</b><span>1個(30g)</span></li>
+            <li><b class="n">クリスマス限定BOX</b><span>数量限定</span></li>
+          </ul>
+          <div class="price"><span class="yen">¥15,840</span><span class="tax">(税込)</span><span class="pts">予約でポイント20倍</span></div>
+          <a class="btn btn-red" href="https://item.rakuten.co.jp/yunth/ys-r178/" target="_blank" rel="noopener">ヴェール肌BOXを予約する</a>
+          <p class="note">※1 うるおいとツヤのある肌印象のこと　※2 仕上がりイメージのこと　※3 メラニンの生成を抑え、しみ・そばかすを防ぐ　※4 DNA-Na(保湿)　※5 アスコルビン酸<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／薬用ホワイトニングローション VCP／薬用 モイストクリーム PVC<br>数量限定のため、なくなり次第終了となります。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 POST ============ -->
+<section class="post" id="post">
+  <div class="inner">
+    <div class="ch-head">
+      <div class="rv">
+        <p class="ch-no"><span>02</span>FOR MYSELF</p>
+        <h2 class="ch-title">Drop in<br>Post BOX</h2>
+        <p class="ch-catch">今年もがんばった<br>わたしに、ご褒美を。</p>
+        <div class="ch-status"><span>好評販売中</span><span>メール便 送料無料</span></div>
+        <p class="ch-text">今年のクリスマスは、がんばった自分にも贈りものを。<br>ポストにそっと届くYunthクリスマス限定BOX。<br>忙しい毎日に、ふっと心がほどける<br class="pc">スキンケア時間を贈りませんか。</p>
+      </div>
+      <figure class="post-visual rv"><img src="images/post-open.jpg" alt="ポスト投函BOXを開くと、美容液・シートマスク・クリームミニが入っている" width="1000" height="780" loading="lazy"><p class="stamp" aria-hidden="true"><span><b>ポストに</b>そっと届く</span></p></figure>
+    </div>
+
+    <div class="post-facts rv">
+      <div class="fact"><b>4,180円から</b><p>美容液28包に、シートマスク2枚とクリームミニまで入った、ご褒美サイズ。</p></div>
+      <div class="fact"><b>ポストに届く</b><p>BOXに送り状を貼ってポスト投函。メール便のため日時指定はできません。</p></div>
+      <div class="fact"><b>肌悩みで4種</b><p>毛穴・透明感、シミ対策・シワ改善、うるおい。自分の肌に合わせて選べます。</p></div>
+    </div>
+
+    <div class="pick">
+      <h3 class="pick-head rv">肌悩みで選ぶ、<br class="sp"><em>4つ</em>の箱。</h3>
+      <nav class="pick-index rv" aria-label="ポスト投函BOX 4種">
+        <a class="c-vc" href="#b-vc"><i>VC</i><span>毛穴・透明感ケア</span><small>¥4,180</small></a>
+        <a class="c-va" href="#b-va"><i>VA</i><span>シミ対策・シワ改善</span><small>¥5,180</small></a>
+        <a class="c-az" href="#b-az"><i>AZ</i><span>毛穴・うるおい集中</span><small>¥4,180</small></a>
+        <a class="c-pdrn" href="#b-pdrn"><i>PDRN</i><span>うるおい満タン水光肌</span><small>¥4,180</small></a>
+      </nav>
+      <div class="minis" id="minis"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHIPPING ============ -->
+<section class="ship">
+  <div class="inner ship-grid">
+    <div class="rv">
+      <h2>ギフトを直送される<br>お客様へ</h2>
+      <p>システムの都合上、差出人名は弊社名で印字され、送り主様のお名前が入りません。直送(贈り先へ直接お届け)の場合は、お手数ですが下記いずれかのご対応をお願いいたします。</p>
+    </div>
+    <div class="rv">
+      <ol>
+        <li><div><b>事前にお届け先様へお知らせいただく</b><p>Yunthから届くことを、ひとことお伝えください。</p></div></li>
+        <li><div><b>お届け先ご住所の末尾に<br>「(○○より)」とご記載ください</b><p>○○にはご注文者様のお名前を。ご住所欄にご記載いただいた内容は、そのまま印字してお届けいたします。</p></div></li>
+      </ol>
+      <p class="note">ポスト投函BOXはBOXに送り状を貼付けたポスト投函となります。メール便のため日時指定ができません。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing">
+  <div class="closing-photo"><img src="images/gift-wood.jpg" alt="スペシャルギフトBOXを開いた手元" width="1000" height="1000" loading="lazy"></div>
+  <div class="closing-body">
+    <div class="logo closing-logo rv" role="img" aria-label="Yunth"></div>
+    <h2 class="rv">Merry<br>Christmas.</h2>
+    <p class="rv">大切な人にも、<br class="sp">がんばった自分にも。<br>今年のクリスマスは、<br class="sp">Yunthの赤い箱を。</p>
+    <div class="closing-cta rv">
+      <a class="btn btn-gold" href="https://item.rakuten.co.jp/yunth/ys-r178/" target="_blank" rel="noopener">スペシャルギフトBOXを予約する</a>
+      <a class="btn btn-white" href="https://item.rakuten.co.jp/yunth/ys-r065/" target="_blank" rel="noopener">ポスト投函BOXを購入する</a>
+    </div>
+  </div>
+</section>
+<footer><div class="inner"><span>Yunth Holiday Collection 2026</span><span>Copyright 2020 Yunth Inc. All Rights Reserved.</span></div></footer>
+
+<script>
+const Q = new URLSearchParams(location.search), SHOT = Q.get("shot"), CLOSED = Q.has("closed");
+if (SHOT) { document.documentElement.classList.add("shot"); document.documentElement.style.setProperty("--shot-h", SHOT + "px"); if (!CLOSED) document.body.classList.add("opened"); }
+/* ---- ポスト投函BOX データ ---- */
+const POST_URL = "https://item.rakuten.co.jp/yunth/ys-r065/";
+const MINIS = [
+  { id:"vc", key:"VC", color:"var(--vc)", catch:"毛穴<sup>※1</sup>・透明感<sup>※2</sup>ケア", name:"ビタミンBOX", price:"4,180",
+    items:[["生ビタミンC<sup>※3</sup>美白<sup>※4</sup>美容液","1箱(28包)",1],["生VCシートマスク","2枚"],["生VC美白<sup>※4</sup>クリームミニ","1個(5g)"],["クリスマス限定BOX","数量限定"]],
+    note:"※1 乾燥による毛穴目立ち　※2 うるおいによる　※3 アスコルビン酸　※4 メラニンの生成を抑え、しみ・そばかすを防ぐ<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／薬用 モイストクリーム PVC" },
+  { id:"va", key:"VA", color:"var(--va)", catch:"W有効成分でシミ対策<sup>※1</sup>・シワ改善<sup>※2</sup>", name:"レチノールBOX", price:"5,180",
+    items:[["生レチノール<sup>※3</sup>美容液","1箱(28包)",1],["生VAシートマスク","2枚"],["生VC美白<sup>※1</sup>クリームミニ","1個(5g)"],["クリスマス限定BOX","数量限定"]],
+    note:"※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 薬用VAセラムに含まれる有効成分ナイアシンアミドの承認効能　※3 レチノール油液(ビタミンA 166,667IU/g)(整肌)<br>＊医薬部外品 薬用VAセラム／薬用 モイストクリーム PVC" },
+  { id:"az", key:"AZ", color:"var(--az)", catch:"毛穴<sup>※1</sup>・うるおい集中", name:"アゼラインBOX", price:"4,180",
+    items:[["生アゼライン酸<sup>※2</sup>美容液","1箱(28包)",1],["生AZシートマスク","2枚"],["生VC美白<sup>※3</sup>クリームミニ","1個(5g)"],["クリスマス限定BOX","数量限定"]],
+    note:"※1 乾燥による毛穴目立ち　※2 アゼライン酸(保湿)　※3 メラニンの生成を抑え、しみ・そばかすを防ぐ<br>＊医薬部外品 薬用 モイストクリーム PVC" },
+  { id:"pdrn", key:"PDRN", color:"var(--pdrn)", catch:"うるおい満タン水光肌<sup>※1</sup>", name:"PDRN<sup>※2</sup> BOX", price:"4,180",
+    items:[["生PDRN-α<sup>※2</sup>美容液","1箱(28包)",1],["生VCシートマスク","2枚"],["生VC美白<sup>※3</sup>クリームミニ","1個(5g)"],["クリスマス限定BOX","数量限定"]],
+    note:"※1 うるおいとツヤのある肌印象のこと　※2 DNA-Na(保湿)　※3 メラニンの生成を抑え、しみ・そばかすを防ぐ<br>＊医薬部外品 薬用 モイストクリーム PVC" }
+];
+const plain = s => s.replace(/<sup>.*?<\/sup>/g, "");
+document.getElementById("minis").innerHTML = MINIS.map(m => `
+  <article class="mini rv" id="b-${m.id}">
+    <div class="mini-top" style="background:${m.color}"><i>${m.key}</i><p>『${m.catch}』</p></div>
+    <div class="mini-photo"><img src="images/post-${m.id}.jpg" alt="${plain(m.name)}の中身" width="880" height="525" loading="lazy"></div>
+    <div class="mini-body">
+      <h4 class="box-name">${m.name}</h4>
+      <div class="mini-items"><img src="images/post-${m.id}-items.jpg" alt="セット内容の商品一覧" width="970" height="240" loading="lazy"></div>
+      <ul class="spec">${m.items.map(([n, q, hl]) => `<li${hl ? ' class="hl"' : ""}><b class="n">${n}</b><span>${q}</span></li>`).join("")}</ul>
+      <div class="price"><span class="yen">¥${m.price}</span><span class="tax">(税込)</span><span class="pts">送料無料</span></div>
+      <a class="btn btn-red" href="${POST_URL}" target="_blank" rel="noopener">${plain(m.name)}を購入する</a>
+      <p class="note">${m.note}</p>
+    </div>
+  </article>`).join("");
+
+/* ---- FV: リボンをほどく ---- */
+if (!CLOSED) {
+  window.addEventListener("load", () => requestAnimationFrame(() => document.body.classList.add("opened")));
+  setTimeout(() => document.body.classList.add("opened"), 2500);
+}
+
+/* ---- スクロールで表示 ---- */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+
+/* ---- FV: 雪 ---- */
+(() => {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const cv = document.getElementById("snow"), ctx = cv.getContext("2d"), fv = document.querySelector(".fv");
+  let W, H, flakes = [], running = true;
+  const resize = () => { const d = Math.min(devicePixelRatio || 1, 2); W = fv.clientWidth; H = fv.clientHeight; cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0); };
+  const make = top => ({ x: Math.random() * W, y: top ? -10 : Math.random() * H, r: Math.random() * 2 + .6, s: Math.random() * .5 + .25, w: Math.random() * Math.PI * 2, a: Math.random() * .45 + .35 });
+  resize(); addEventListener("resize", resize);
+  const COUNT = W < 768 ? 40 : 80;
+  for (let i = 0; i < COUNT; i++) flakes.push(make(false));
+  new IntersectionObserver(([e]) => { running = e.isIntersecting; if (running) tick(); }).observe(fv);
+  function tick() {
+    if (!running) return;
+    ctx.clearRect(0, 0, W, H);
+    flakes.forEach((f, i) => {
+      f.y += f.s; f.w += .01; f.x += Math.sin(f.w) * .3;
+      if (f.y > H + 10) flakes[i] = make(true);
+      ctx.beginPath(); ctx.arc(f.x, f.y, f.r, 0, 7);
+      ctx.fillStyle = `rgba(255,255,255,${f.a})`; ctx.fill();
+    });
+    requestAnimationFrame(tick);
+  }
+})();
+</script>
+</body>
+</html>
