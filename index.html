@@ -458,7 +458,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
           <p class="box-catch">シミ対策<sup>※1</sup>・シワ改善<sup>※3</sup>集中</p>
           <h3 class="box-name">シルキー肌<sup>※2</sup>BOX</h3>
           <p class="box-formula">生VC美白<sup>※1</sup>美容液<sup>＊</sup> × 生VA美容液<sup>＊</sup></p>
-          <div class="box-items"><img src="images/silky-items.jpg" alt="セット内容の商品一覧" width="1000" height="303" loading="lazy"></div>
+          <div class="box-items"><img src="images/silky-items.jpg?v=2" alt="セット内容の商品一覧" width="1000" height="303" loading="lazy"></div>
           <ul class="spec">
             <li><b class="n">生VC美白<sup>※1</sup>美容液<sup>＊</sup></b><span>1箱(28包)</span></li>
             <li class="hl"><b class="n">生VA美容液<sup>＊</sup></b><span>1箱(28包)</span></li>
@@ -477,7 +477,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
           <p class="box-catch">うるおい満タン水光肌<sup>※1</sup>へ</p>
           <h3 class="box-name">ヴェール肌<sup>※2</sup>BOX</h3>
           <p class="box-formula">生VC美白<sup>※3</sup>美容液<sup>＊</sup> × 生PDRN<sup>※4</sup>美容液</p>
-          <div class="box-items"><img src="images/veil-items.jpg" alt="セット内容の商品一覧" width="1000" height="303" loading="lazy"></div>
+          <div class="box-items"><img src="images/veil-items.jpg?v=2" alt="セット内容の商品一覧" width="1000" height="303" loading="lazy"></div>
           <ul class="spec">
             <li><b class="n">生VC美白<sup>※3</sup>美容液<sup>＊</sup></b><span>1箱(28包)</span></li>
             <li class="hl"><b class="n">生PDRN<sup>※4</sup>美容液</b><span>1箱(28包)</span></li>
@@ -586,7 +586,7 @@ document.getElementById("minis").innerHTML = MINIS.map(m => `
     <div class="mini-photo"><img src="images/post-${m.id}.jpg" alt="${plain(m.name)}の中身" width="880" height="525" loading="lazy"></div>
     <div class="mini-body">
       <h4 class="box-name">${m.name}</h4>
-      <div class="mini-items"><img src="images/post-${m.id}-items.jpg" alt="セット内容の商品一覧" width="1000" height="303" loading="lazy"></div>
+      <div class="mini-items"><img src="images/post-${m.id}-items.jpg?v=2" alt="セット内容の商品一覧" width="1000" height="303" loading="lazy"></div>
       <ul class="spec">${m.items.map(([n, q, hl]) => `<li${hl ? ' class="hl"' : ""}><b class="n">${n}</b><span>${q}</span></li>`).join("")}</ul>
       <div class="price"><span class="yen">¥${m.price}</span><span class="tax">(税込)</span><span class="pts">送料無料</span></div>
       <a class="btn btn-red" href="${POST_URL}" target="_blank" rel="noopener"><span>${m.name}を購入する</span></a>
